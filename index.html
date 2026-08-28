@@ -1,12 +1,9 @@
-
-
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>정환이네</title>
+<title>가게 리뷰 게시판</title>
 
 <!-- =========================================================
 Firebase (Firestore) SDK
@@ -510,7 +507,7 @@ font-size:38px;font-weight:900;color:#ff5c8a;letter-spacing:.5px;margin-bottom:8
 ================================================================= */
 const STORE = {
 name: "도훈이네",
-category: "여행 중",
+category: "탄광",
 
 // 홈 화면 상단 사진 (원하는 이미지 URL로 교체)
 photos: [
@@ -519,11 +516,11 @@ photos: [
 "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F8VfqZ%2FdJMcafudTpd%2FAAAAAAAAAAAAAAAAAAAAALDPPdYVhxpmqoboibnTUVGvk_tCgZXFH32TXiysVqgd%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dj%252BrFVSohJ8q4HNbDEjUHgjQwa6w%253D"
 ],
 
-address: "여기에 넣을 주소를 생각해라",
-addressSub: "매트리스 사이 486 m 조낸 멀게",
-hours: "17 일까지 휴무",
+address: "인천시 검단구 이음 1로 420 2603 동 202 호",
+addressSub: "아라역 1 번 출구에서 486 m",
+hours: "매주 일요일 휴무",
 phone: "010-1234-5678",
-website: "https://www.click.co.kr",
+website: "https://www.8trash.co.kr",
 
 // "전화" 버튼을 누르면 이동할 링크 (원하는 유튜브 영상 주소로 교체 가능)
 callButtonLink: "https://www.youtube.com/watch?v=VBdxMZEh0pQ&list=RDVBdxMZEh0pQ&start_radio=1",
@@ -538,7 +535,7 @@ departureImage: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=h
 notifyImage: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FVylR3%2FdJMcabMgaHB%2FAAAAAAAAAAAAAAAAAAAAADUnuz4-l_8kKCEjDDgWictk1rfK9qTlwsx42nJs1oE8%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMcLOo0zuWHrCV9dyTwbnx6TpIt8%253D",
 
 menu: [
-{ name: "형새끼야 형", desc: "대표 메뉴", price: "2,000 코인" },
+{ name: "아이스 아메리카노", desc: "대표 메뉴", price: "2,000원" },
 { name: "헤랴 밥상", desc: "", price: "50,000원" },
 { name: "헤랴 디저트", desc: "", price: "75,000원" },
 { name: "담타", desc: "", price: "1,800원" }
