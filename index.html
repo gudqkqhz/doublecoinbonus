@@ -488,12 +488,12 @@ font-size:38px;font-weight:900;color:#ff5c8a;letter-spacing:.5px;margin-bottom:8
 <div class="notify-modal-backdrop" id="ddayModal">
 <div class="notify-modal">
 <div class="notify-modal-head">
-<h4>도착 · 우리의 디데이</h4>
+<h4>도착 · 놀랍게도 신혼임</h4>
 <button class="close-x" id="ddayModalClose">&#10005;</button>
 </div>
 <div class="notify-modal-body">
 <div class="dday-box">
-<div class="dday-heart">💕</div>
+<div class="dday-heart">나랑 형이랑</div>
 <div class="dday-count" id="ddayCount">D+0</div>
 <div class="dday-since" id="ddaySince"></div>
 </div>
@@ -511,9 +511,9 @@ category: "여행 중",
 
 // 홈 화면 상단 사진 (원하는 이미지 URL로 교체)
 photos: [
-"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbtZ5sp%2FdJMb99OeS3f%2FAAAAAAAAAAAAAAAAAAAAANFB7PBGZYEaBi2GLzJXHSqOEe5b44NUZefQInnuOqC2%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DnIXfycltDZ1iicyfcCACScEBCIw%253D",
-"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FbhDX54%2FdJMcaaGyD3M%2FAAAAAAAAAAAAAAAAAAAAAIsnppc5W2AHM0v0nbsisceW_ZkyN1fUMXP-GBEYo49n%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DsbQe3qwwQexiCM8Ar6a7iuvYnBk%253D",
-"https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2F8VfqZ%2FdJMcafudTpd%2FAAAAAAAAAAAAAAAAAAAAALDPPdYVhxpmqoboibnTUVGvk_tCgZXFH32TXiysVqgd%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3Dj%252BrFVSohJ8q4HNbDEjUHgjQwa6w%253D"
+"file3.jpg",
+"file4-2.jpg",
+"file5-2.jpg"
 ],
 
 address: "무한 이별 시뮬레이션 지옥에 갇혔다 형 도와줘",
@@ -523,16 +523,16 @@ phone: "010-8915-8282",
 website: "https://bit.ly/점수확인하고울지마",
 
 // "전화" 버튼을 누르면 이동할 링크 (원하는 유튜브 영상 주소로 교체 가능)
-callButtonLink: "https://youtu.be/sZxLJLj9o38?si=LytMgqNkV2VFDm5I",
+callButtonLink: "https://youtu.be/hrkz3EpfJdw?si=2LFtRzxYNmvnQ4DF",
 
 // "도착" 버튼을 누르면 보여줄 커플 디데이 기준일 (사귀기 시작한 날짜, YYYY-MM-DD)
 coupleStartDate: "2026-08-18",
 
 // "출발" 버튼을 누르면 보여줄 고정 이미지 (원하는 이미지 URL로 교체)
-departureImage: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FRpYzM%2FdJMcaidwXw0%2FAAAAAAAAAAAAAAAAAAAAAGLq9ifKAP9nOtVQ9-xAhVPVTKPe_fVTcCN1I0h2OE1v%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DNjJ%252FRsARqoFGhUfsabLotVqKndY%253D",
+departureImage: "file1.jpg",
 
 // "알림받기" 버튼을 누르면 보여줄 고정 이미지 (원하는 이미지 URL로 교체)
-notifyImage: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdna%2FVylR3%2FdJMcabMgaHB%2FAAAAAAAAAAAAAAAAAAAAADUnuz4-l_8kKCEjDDgWictk1rfK9qTlwsx42nJs1oE8%2Fimg.jpg%3Fcredential%3DyqXZFxpELC7KVnFOS48ylbz2pIh7yKj8%26expires%3D1788188399%26allow_ip%3D%26allow_referer%3D%26signature%3DMcLOo0zuWHrCV9dyTwbnx6TpIt8%253D",
+notifyImage: "file2.jpg",
 
 menu: [
 { name: "신정환 꼰질머리 발동", desc: "대표 메뉴", price: "500 코인" },
@@ -847,7 +847,7 @@ document.getElementById('ddayCount').textContent = `D-${Math.abs(diffDays)}`;
 document.getElementById('ddaySince').textContent = `${startLabel}까지 남은 날`;
 } else {
 document.getElementById('ddayCount').textContent = `D+${dayCount}`;
-document.getElementById('ddaySince').textContent = `${startLabel}부터 함께한 날`;
+document.getElementById('ddaySince').textContent = `${startLabel}부터 쭉 사랑해`;
 }
 }
 
